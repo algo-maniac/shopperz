@@ -12,8 +12,8 @@ function page() {
   const dispatch = useDispatch();
   const globalUser = useSelector((state) => state.auth.userData);
   const [userDetails, setUserDetails] = useState({
-    username: "",
-    password: "",
+    username: "atuny0",
+    password: "9uQFF1Lh",
   });
 
   const [userLoggedIn, setUserLoggedIn] = useState(0);
@@ -58,6 +58,7 @@ function page() {
               onChange={(e) => {
                 setUserDetails({ ...userDetails, username: e.target.value });
               }}
+              value={userDetails.username}
               className="p-1 px-2 rounded-lg outline-none border-2 border-blue-600 w-full"
             />
           </div>
@@ -68,6 +69,7 @@ function page() {
               onChange={(e) => {
                 setUserDetails({ ...userDetails, password: e.target.value });
               }}
+              value={userDetails.password}
               className="p-1 px-2 rounded-lg outline-none border-2 border-blue-600 w-full"
             />
           </div>
